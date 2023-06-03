@@ -61,7 +61,9 @@ const typed = new Typed(".multiple-text", {
     "Full-stack web Developer.",
   ],
   typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
+  backSpeed: 60,
+  backDelay: 100,
   loop: true,
 });
+
+/*========================= typed js ====================*/
