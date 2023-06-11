@@ -613,6 +613,56 @@ span {
 .image-container:hover .caption {
   opacity: 1;
 }
+
+/*ter-cond*/
+.linktermini {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.cont-termini {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.cont-termini p {
+  font-size: 1.7rem;
+}
+
+.intestto2 {
+  font-size: 2.7rem;
+  color: var(--main-color);
+  padding: 10px 0;
+}
+
+/*mod-seo*/
+.secmodseo {
+  padding-top: 50px;
+}
+
+.issalasu {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+
+.corpo {
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+.corpo ul {
+  width: 80%;
+  padding: 50px 0;
+}
+
+.virdi {
+  color: var(--main-color);
+}
+
 /*BREAKPOINT*/
 @media (max-width: 1300px) {
   html {
