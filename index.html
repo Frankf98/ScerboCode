@@ -44,15 +44,15 @@
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="#services">Servizi</a>
+        <a href="#about">Chi siamo</a>
+        <a href="#portfolio">Certificati</a>
+        <a href="#contact">Contattaci</a>
       </nav>
     </header>
 
     <!--home section design-->
-    <div class="posline">
+    <div class="posline" id="home">
       <div class="clock-container" id="clock-container"></div>
       <div class="int-or">
         <div class="ny"><p>New York</p></div>
@@ -62,7 +62,7 @@
         <div class="mi"><p>Milano</p></div>
       </div>
     </div>
-    <section class="home" id="home">
+    <section class="home">
       <div class="home-content">
         <h3>Realizziamo il tuo sito web</h3>
         <h1>Ovunque tu sia, siamo tutti online</h1>
@@ -197,7 +197,7 @@
           <!--Cert-Html-CSS-->
           <div class="portfolio-layer">
             <h4>Certificato HTML, CSS</h4>
-            <p>Scan the QR code to see other projects.</p>
+            <p>Scansiona il Qr Code.</p>
             <a
               href="https://www.freecodecamp.org/certification/frank-Wolf98-AIG/responsive-web-design"
               target="_blank"
@@ -211,7 +211,7 @@
           <!--Cert-JS-->
           <div class="portfolio-layer">
             <h4>Certificato JavaScript</h4>
-            <p>Scan the QR code to see other projects.</p>
+            <p>Scansiona il Qr Code.</p>
             <a
               href="https://www.freecodecamp.org/certification/frank-Wolf98-AIG/javascript-algorithms-and-data-structures"
               target="_blank"
@@ -233,21 +233,21 @@
         enctype="text/plain"
       >
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="Email " />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Nuber" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="number" placeholder="Cell" />
+          <input type="text" placeholder="Tell" />
         </div>
         <textarea
           name=""
           id=""
           cols="30"
           rows="10"
-          placeholder="Your Message"
+          placeholder="Il tuo messaggio"
         ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <input type="submit" value="Apri Email" class="btn" />
       </form>
     </section>
 
@@ -255,11 +255,9 @@
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by FS | All Rights Reserved.</p>
+        <p>Copyright &copy; 2023 by FS |All rights of creation</p>
       </div>
-      <div class="footer-text">
-        <a href=""><p>Privacy Policy</p></a>
-      </div>
+
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
@@ -269,7 +267,7 @@
       var _iub = _iub || [];
       _iub.csConfiguration = {
         askConsentAtCookiePolicyUpdate: true,
-        floatingPreferencesButtonDisplay: "bottom-right",
+        floatingPreferencesButtonDisplay: "bottom-left",
         perPurposeConsent: true,
         siteId: 3182948,
         whitelabel: false,
