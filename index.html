@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="imag" href="imag.html" />
+    <link rel="stylesheet" href="devweb.html" />
     <link rel="stylesheet" href="styles.css" />
     <title>FS|Scerbocode.com</title>
   </head>
@@ -44,27 +44,36 @@
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#about">About</a>
         <a href="#portfolio">Certificates</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <!--home section design-->
-
+    <div class="posline">
+      <div class="clock-container" id="clock-container"></div>
+      <div class="int-or">
+        <div class="ny"><p>New York</p></div>
+        <div class="ld"><p>Londra</p></div>
+        <div class="tk"><p>Tokyo</p></div>
+        <div class="sy"><p>Sydney</p></div>
+        <div class="mi"><p>Milano</p></div>
+      </div>
+    </div>
     <section class="home" id="home">
       <div class="home-content">
-        <h3>created by</h3>
-        <h1>Francesco Scerbo</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <h3>Realizziamo il tuo sito web</h3>
+        <h1>Ovunque tu sia, siamo tutti online</h1>
+        <h3>siamo <span class="multiple-text"></span></h3>
         <p>
-          "A double world divided between web and reality, <br />
-          we can turn your idea into a digital reality."
+          "Un doppio mondo diviso tra web e realtà, <br />
+          possiamo trasformare la tua idea in una realtà digitale."
         </p>
         <div class="social-media">
           <a
-            href="https://www.facebook.com/frank.xdddf"
+            href="https://www.facebook.com/profile.php?id=100093572078768"
             target="_blank"
             aria-label="Follow on Facebook"
             ><i class="bx bxl-facebook"></i
@@ -94,9 +103,56 @@
             ><i class="bx bxl-github"></i
           ></a>
         </div>
-        <a href="img/CV_JFSTech.pdf" class="btn" download="CV_JFSTech"
-          >Created reality</a
+        <button
+          class="btn"
+          onclick="window.location.href='mailto:f.scerbo@hotmail.com?subject=Oggetto del messaggio&body=Testo del messaggio'"
         >
+          consulenza gratuita
+        </button>
+      </div>
+    </section>
+
+    <!--services section design-->
+
+    <section class="services" id="services">
+      <h2 class="heading">nostri <span>Servizi</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            • Sviluppo e progettazione di siti web,<br />
+            applicazioni web e soluzioni personalizzate.<br />
+            • Aggiornamento e manutenzione di siti web esistenti
+          </p>
+
+          <a href="devweb.html" class="btn">Scopri di più</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphic Design</h3>
+          <p>
+            • Implementazione di design reattivi che garantiscono una corretta
+            visualizzazione del
+            <br />
+            sito web su diverse dimensioni dello schermo <br />
+            (desktop, tablet, smartphone).
+          </p>
+          <a href="#contact" class="btn">Scopri di più</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-line-chart"></i>
+          <h3>Digital Marketing</h3>
+          <p>
+            • Search Engine Optimization, in acronimo SEO. Consulenza e supporto
+            <br />per scegliere le tecnologie e gli strumenti giusti in base
+            alle esigenze delle imprese e dei privati.
+          </p>
+          <a href="#contact" class="btn">Leggi di più sul SEO</a>
+        </div>
       </div>
     </section>
 
@@ -105,87 +161,42 @@
     <section class="about" id="about">
       <div class="about-img">
         <img
-          src="img/DSC_0688.webp"
+          src="img/pexels-cottonbro-studio-5185166.jpg"
           alt="Photo of Francesco Scerbo in formal attire"
         />
         <!--IMG-->
       </div>
 
       <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Full-stack Developer</h3>
+        <h2 class="heading">Chi <span>Siamo</span></h2>
+        <h3>Sviluppo&Passione</h3>
 
         <p class="mey">
-          " I am a passionate programmer with a long experience in technology.
-          Since the age of four, I have demonstrated a great predisposition to
-          using the keyboard, installing my first program on an old Windows XP.
-          As I grew up, I had the opportunity to learn important values from my
-          father, a construction professional, who taught me the importance of
-          performing every task with the utmost precision and dedication, as the
-          pursuit of excellence is paramount. This valuable lesson inspired the
-          creation of my ideal company, Future Stable, which is dedicated to
-          offering web development services accessible to all and of the highest
-          quality."
+          " Sono un programmatore appassionato con una vasta esperienza nel
+          campo della tecnologia. Fin dalla tenera età di quattro anni, ho
+          dimostrato una notevole affinità con la tastiera, installando il mio
+          primo programma su un vecchio sistema operativo Windows XP. Nel corso
+          degli anni, ho avuto l'opportunità di apprendere importanti valori dal
+          mio padre, un professionista nel settore della costruzione, che mi ha
+          trasmesso l'importanza di svolgere ogni compito con la massima
+          precisione e dedizione, nonché la ricerca costante dell'eccellenza.
+          Questa preziosa lezione ha ispirato la creazione della mia compagnia
+          ideale, ScerboCode, dedicata a fornire servizi di sviluppo web
+          accessibili a tutti, senza compromettere la qualità. "
         </p>
-
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
-
-    <!--services section design-->
-
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
-          <p>
-            • Developing and designing websites, <br />
-            web applications, and customized solutions.<br />
-            • Updating and maintaining existing <br />
-            websites.
-          </p>
-
-          <a href="#contact" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Graphic Design</h3>
-          <p>
-            • Implementation of responsive designs that ensure proper display of
-            the <br />
-            website on different screen sizes <br />
-            (desktop, tablet, smartphone).
-          </p>
-          <a href="#contact" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bx-line-chart"></i>
-          <h3>Digital Marketing</h3>
-          <p>
-            • Search Engine Optimization, in acronym SEO consultancy and support
-            for choosing <br />the right technologies and tools <br />that meet
-            the needs of businesses and individuals.
-          </p>
-          <a href="#contact" class="btn">More Info on SEO</a>
-        </div>
       </div>
     </section>
 
     <!--Portfolio section design-->
 
     <section id="portfolio" class="portfolio">
-      <h2 class="heading">My<span> certificates</span></h2>
+      <h2 class="heading"><span>I</span>cetificati</h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
           <img src="img/certificato1.webp" alt="QR-Code" />
           <!--Cert-Html-CSS-->
           <div class="portfolio-layer">
-            <h4>Certificate HTML, CSS</h4>
+            <h4>Certificato HTML, CSS</h4>
             <p>Scan the QR code to see other projects.</p>
             <a
               href="https://www.freecodecamp.org/certification/frank-Wolf98-AIG/responsive-web-design"
@@ -199,7 +210,7 @@
           <img src="img/cert2.webp" alt="QR-Code2" />
           <!--Cert-JS-->
           <div class="portfolio-layer">
-            <h4>Certificate JavaScript</h4>
+            <h4>Certificato JavaScript</h4>
             <p>Scan the QR code to see other projects.</p>
             <a
               href="https://www.freecodecamp.org/certification/frank-Wolf98-AIG/javascript-algorithms-and-data-structures"
@@ -214,7 +225,7 @@
     <!-- contact section design -->
 
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>us!</span></h2>
+      <h2 class="heading">Contatta <span>noi!</span></h2>
 
       <form
         action="mailto:frank.xdddf@gmail.com"
@@ -246,10 +257,40 @@
       <div class="footer-text">
         <p>Copyright &copy; 2023 by FS | All Rights Reserved.</p>
       </div>
+      <div class="footer-text">
+        <a href=""><p>Privacy Policy</p></a>
+      </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      var _iub = _iub || [];
+      _iub.csConfiguration = {
+        askConsentAtCookiePolicyUpdate: true,
+        floatingPreferencesButtonDisplay: "bottom-right",
+        perPurposeConsent: true,
+        siteId: 3182948,
+        whitelabel: false,
+        cookiePolicyId: 59706904,
+        lang: "it",
+        banner: {
+          acceptButtonDisplay: true,
+          closeButtonRejects: true,
+          customizeButtonDisplay: true,
+          explicitWithdrawal: true,
+          listPurposes: true,
+          position: "bottom",
+        },
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.iubenda.com/cs/iubenda_cs.js"
+      charset="UTF-8"
+      async
+    ></script>
 
     <!--scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -258,6 +299,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!--custom js -->
+    <script src="lib/luxon.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -66,4 +66,54 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
-/*========================= typed js ====================*/
+/*========================= orologgio ====================*/
+const { DateTime } = luxon;
+
+function createClock(city, timeZone) {
+  const clockContainer = document.getElementById("clock-container");
+
+  // Crea il contenitore per l'orologio
+  const clock = document.createElement("div");
+  clock.className = "clock";
+
+  // Crea le lancette delle ore e dei minuti
+  const hourHand = document.createElement("div");
+  hourHand.className = "hand hour-hand";
+
+  const minuteHand = document.createElement("div");
+  minuteHand.className = "hand minute-hand";
+
+  // Crea la lancetta dei secondi
+  const secondHand = document.createElement("div");
+  secondHand.className = "hand second-hand";
+
+  // Aggiungi la lancetta dei secondi all'orologio
+  clock.appendChild(secondHand);
+
+  // Aggiungi le lancette all'orologio
+  clock.appendChild(hourHand);
+  clock.appendChild(minuteHand);
+
+  // Aggiungi l'orologio al container
+  clockContainer.appendChild(clock);
+
+  // Aggiorna l'orologio ogni secondo
+  setInterval(() => {
+    const now = DateTime.now().setZone(timeZone);
+
+    const hourRotation = (now.hour % 12) * 30 + (now.minute / 60) * 30;
+    const minuteRotation = (now.minute / 60) * 360;
+    const secondRotation = (now.second / 60) * 360;
+    secondHand.style.transform = `translate(-50%, -100%) rotate(${secondRotation}deg)`;
+
+    hourHand.style.transform = `rotate(${hourRotation}deg)`;
+    minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
+  }, 1000);
+}
+
+// Creazione degli orologi per le città
+createClock("New York", "America/New_York");
+createClock("London", "Europe/London");
+createClock("Tokyo", "Asia/Tokyo");
+createClock("Sydney", "Australia/Sydney");
+createClock("Milano", "Europe/Rome");
