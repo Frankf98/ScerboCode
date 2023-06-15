@@ -260,11 +260,11 @@ span {
 }
 
 .about-img img {
-  width: 25vw;
+  width: 30vw;
   position: relative;
 
-  border-bottom: solid var(--main-color);
-  box-shadow: 5rem var(--main-color);
+  border-left: 5px solid var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
 }
 
 .heading {
@@ -283,7 +283,7 @@ span {
 }
 
 .about-content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 1rem 0 3rem 2rem;
   margin-left: 0%;
   column-count: 1;
@@ -849,7 +849,7 @@ span {
     flex-direction: column;
   }
 
-  .about-img {
+  .about-img img {
     width: 30vw;
     margin-top: 4rem;
   }
@@ -915,7 +915,7 @@ span {
   }
 
   .about-img img {
-    width: 30vw;
+    width: 45vw;
   }
 
   .navbar.active {
