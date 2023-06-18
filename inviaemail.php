@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $oggetto = $_POST['oggetto'];
   $messaggio = $_POST['messaggio'];
 
-  $destinatario = "tuo@email.com";
+  $destinatario = "frank.xdddf@gmail.com";
   $messaggio_email = "Nome: $nome\n";
   $messaggio_email .= "Email: $email\n";
   $messaggio_email .= "Oggetto: $oggetto\n";
